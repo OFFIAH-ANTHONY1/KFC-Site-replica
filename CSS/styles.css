@@ -1,0 +1,521 @@
+/*global*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    font-family: National2, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    max-width: 100%;
+    max-height: 4500px;
+    width: 100%;
+    height: 1165px;
+    min-width: 400px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*header*/
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+   position: sticky;
+   top: 0;
+}
+
+#header img{
+    width: 90px;
+    height: 65px;
+   margin-left: 20px;
+}
+
+#header li{
+    height: 100%;
+    align-items: center;
+}
+
+/*navigation*/
+#navbar i{
+  
+  color: red;
+}
+
+#navbar ul{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+#navbar a{
+    padding: 0 15px 0 15px;
+    margin-right: 10px;
+}
+
+#navbar a:hover{
+    color: #ff1a1a;
+}
+
+/*menu*/
+.menu i{
+    width: 70px;
+    height: 65px;
+    display: none;
+}
+
+#menubar{
+    position: fixed;
+    max-width: 1400px;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 999;
+    display: none;
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 350px;
+    width: 100%;
+    height: 100vh;
+    
+    background-color: #ff1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#menubar a, #menubar i{
+    color: white;
+    padding: 5px 0 0 20px;
+}
+
+/*menu*/
+/*showcase(1st section)*/
+.showcase{
+   width: 100%;
+    height: 450px;
+    display: flex;
+      padding: 30px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      align-items: center;
+     background-image: url(https://images.ctfassets.net/h7j9u4fil4a3/3AMP3SAQzBh0XBBOX6cKSe/8ce33d6cbc7c39a6b6941a8ae74e5a95/KFC_X_Chrissy_Teigen_Mothers_Day_Menu.jpg?w=1200&h=667&q=50&fm=webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   }
+
+   #showcase-container{
+    width: 100%;
+    height: 450px;
+    padding: 40px 0 40px 0;
+    background-color: rgba(0, 0, 0, 0.443);
+    margin: 0;
+ 
+}
+
+#showcase-container h1{
+    font-size: 40px;
+    padding: 30px;
+    font-family: serif;
+}
+
+#showcase-container a{
+    font-size: 16px;
+   color: white;
+}
+
+#showcase-container button{
+    width: 120px;
+    height: 40px;
+    background-color: #ff1a1a;
+    border: none;
+}
+
+#showcase-container button:hover{
+    background-color: black;
+}
+
+.slide-links{
+    width: 100px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 60px 0 30px 20px;
+    justify-content: space-evenly;
+}
+
+.slide-links div{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+   
+}
+
+.slide-links .current{
+    background-color: #ff1a1a;
+}
+
+/*about (2nd section)*/
+.about-section{
+    width: 100%;
+    height: 520px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.about-section a{
+    color: white;
+}
+
+.squre-divs{
+    width: 300px;
+    height: 35px;
+    display: flex;
+   margin: 0 auto;
+}
+
+.squre-divs div{
+    width: 50px;
+    height: 35px;
+    background-color: #ff1a1a;
+    margin: 0 auto;
+}
+
+.about-div {
+    width: 100%;
+    height: 350px;
+   margin-top: 70px;
+   text-align: center;
+}
+
+.about-div h2, .about-div p{
+    padding: 20px 0 20px 0;
+}
+
+.about-div button{
+    width: 200px;
+    height: 55px;
+    background-color: #ff1a1a;
+    border: none;
+}
+
+.about-div button:hover{
+    background-color: black;
+}
+
+.access-links{
+    max-width: 100%;
+    height: 70px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2px;
+    margin: 0;
+}
+
+.grid-item{
+    
+    background-color: #ff1a1a;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-item a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.grid-item:hover{
+    background-color: black;
+}
+
+/*contact(3rd section)*/
+.contact{
+    width: 100%;
+    height: 450px;
+    background-image: url('https://images.ctfassets.net/h7j9u4fil4a3/4Cmknzk0Wo8FkK5LNKENrv/6b4d13e5b48bdd4c9c287fa9059fd5b5/footer_background.jpg?w=1920&h=358&q=50&fm=webp');
+    margin: 0;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.contact-container{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    margin-right: 100px;
+}
+
+.contact h4{
+    font-weight: bold;
+    color: #ff1a1a;
+    font-size: 15px;
+   
+}
+
+.contact-container .logo-div img{
+    width: 115px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.contact a{
+    font-weight: normal;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+footer p, footer div{
+    margin-top: 30px;
+}
+
+footer a{
+    padding: 7px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+/*media queries*/
+@media only screen and (max-width:1200px){
+    #header{
+        width: 100%;
+        height: 70px;
+    }
+
+    #header img{
+        width: 80px;
+    height: 45px;
+   margin-left: 10px;
+    }
+
+    #navbar li{
+        display: none;
+    }
+
+    .menu i{
+        width: 40px;
+        height: 40px;
+        display: block;
+        padding-right: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 992px){
+    #header{
+        width: 100%;
+        height: 70px;
+    }
+
+    #header img{
+        width: 80px;
+    height: 45px;
+   margin-left: 10px;
+    }
+
+    #navbar li{
+        display: none;
+    }
+
+    .menu-icon i{
+        width: 40px;
+        height: 40px;
+        display: block;
+        padding-right: 40px;
+    }
+
+    body{
+        height: 1600px;
+    }
+
+    .showcase h1{
+        font-size: 38px;
+    }
+
+    .about-section{
+        width: 100%;
+        height: 577px;
+        
+    }
+
+    .access-links{
+        max-width: 100%;
+        height: 120px;
+       grid-template-columns: repeat(2, 1fr);
+        row-gap: 2px;
+        margin: 0;
+        
+    }
+    
+    .grid-item{
+         
+        font-size: 23px;
+    }
+
+    #showcase h1{
+        font-size: 32px;
+    }
+    
+    .contact-container{
+        margin-left: 30px;
+    }
+    
+    .contact img, .contact ul {
+       margin: 20px;
+    }
+   
+    footer{
+        display: block;
+        font-size: 13px;
+        width: 100%;
+        height: 95px;
+        padding: 10px;
+    }
+    
+    footer p, footer div{
+        margin-top: 20px;
+    }
+    
+    footer a{
+        font-size: 13px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        width: 100%;
+        height: 1750px;
+    }
+
+    #showcase-container{
+        padding: 20px;
+    }
+
+    .slide-links{
+        padding: 10px 0 0 10px;
+        margin-top: 60px;
+    }
+
+    #showcase-container h1{
+        font-size: 27px;
+        font-family: serif;
+    }
+
+    #showcase-container h1, #showcase-container a, .slide-links{
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+
+    .about-section{
+        width: 100%;
+        height: 700px;
+       
+    }
+
+    .about-div{
+        padding: 0 45px;
+    }
+
+    .access-links{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1px;
+        margin-top: 30px;
+        height: 220px;
+    }
+
+.contact{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer{
+        width: 100%;
+        height: 85px;
+        display: block;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    footer div a{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+     body{
+        width: 100%;
+        height: 1870px;
+     }
+
+     .about-section{
+        width: 100%;
+        height: 770px;
+     }
+
+     .access-links{
+        margin-top: 100px;
+     }
+}
+
+@media only screen and (max-width: 660px){
+    body{
+        width: 100;
+        height: 1900px;
+    }
+
+    .about-section{
+        width: 100%;
+        height: 820px;
+    }
+
+    .access-links{
+        margin-top: 150px;
+     }
+
+}
