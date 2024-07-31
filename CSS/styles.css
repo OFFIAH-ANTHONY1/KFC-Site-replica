@@ -55,8 +55,7 @@ li{
 }
 
 /*navigation*/
-#navbar i{
-  
+#navbar .nav-links i{
   color: red;
 }
 
@@ -71,7 +70,7 @@ li{
     margin-right: 10px;
 }
 
-#navbar a:hover{
+#navbar .nav-links a:hover{
     color: #ff1a1a;
 }
 
@@ -86,7 +85,6 @@ li{
     position: fixed;
     top: 0;
     left: 0;
-    max-width: sum(100% - 550px);
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -94,26 +92,77 @@ li{
     display: none;
 }
 
+.menu-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-images #writing{
+    width: 60px;
+    height: 300px;
+    position: absolute;
+    bottom: 15px;
+}
+
 .menu-container{
     position: fixed;
     top: 0;
     right: 0;
-    max-width: 550px;
-    width: 100%;
+    width: 60%;
     height: 100vh;
     background-color: #ff1a1a;
-    display: block;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.menu-container li{
-    display: block;
+.menu-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 18px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.menu-container .search-bar{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.search-bar #search{
+    margin-left: 3px;
+    width: 190px;
+    height: 30px;
+    border: none;
+    border-bottom: 3px solid white;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #ff1a1a;
+    border-radius: 3px;
+    display: none;
+}
+
+.search-bar i{
+    font-size: 25px;
 }
 
 .menu-container a, .menu-container i{
     color: white;
     padding: 5px 0 0 20px;
+    text-decoration: none;
 }
+
+.menu-container #back i{
+   display: block;
+   position: absolute;
+   top: 5px;
+   left: 30px;
+   font-size: 40px;
+}
+
 
 /*menu*/
 /*showcase(1st section)*/
@@ -356,8 +405,7 @@ footer a{
         position: fixed;
         top: 0;
         right: 0;
-        max-width: 350px;
-        width: 100%;
+        width: 60%;
         height: 100vh;
         background-color: #ff1a1a;
         display: block;
@@ -449,34 +497,6 @@ footer a{
         font-size: 13px;
     }
 
-    #menubar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 3;
-        display: none;
-    }
-    
-    .menu-container{
-        position: fixed;
-        top: 0;
-        right: 0;
-        max-width: 350px;
-        width: 100%;
-        height: 100vh;
-        background-color: #ff1a1a;
-        display: block;
-        
-    }
-
-    .menu-container a, .menu-container i{
-        color: white;
-        padding: 5px 0 0 20px;
-    }
-    
 }
 
 @media only screen and (max-width: 768px){
@@ -545,34 +565,6 @@ footer a{
         display: block;
     }
 
-    #menubar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 3;
-        display: none;
-    }
-    
-    .menu-container{
-        position: fixed;
-        top: 0;
-        right: 0;
-        max-width: 350px;
-        width: 100%;
-        height: 100vh;
-        background-color: #ff1a1a;
-        display: block;
-        
-    }
-
-    .menu-container a, .menu-container i{
-        color: white;
-        padding: 5px 0 0 20px;
-    }
-
 }
 
 @media only screen and (max-width: 700px){
@@ -590,33 +582,6 @@ footer a{
         margin-top: 100px;
      }
 
-     #menubar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 3;
-        display: none;
-    }
-    
-    .menu-container{
-        position: fixed;
-        top: 0;
-        right: 0;
-        max-width: 350px;
-        width: 100%;
-        height: 100vh;
-        background-color: #ff1a1a;
-        display: block;
-        
-    }
-
-    .menu-container a, .menu-container i{
-        color: white;
-        padding: 5px 0 0 20px;
-    }
 }
 
 @media only screen and (max-width: 660px){
@@ -633,34 +598,6 @@ footer a{
     .access-links{
         margin-top: 150px;
      }
-
-     #menubar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 3;
-        display: none;
-    }
-    
-    .menu-container{
-        position: fixed;
-        top: 0;
-        right: 0;
-        max-width: 350px;
-        width: 100%;
-        height: 100vh;
-        background-color: #ff1a1a;
-        display: block;
-        
-    }
-
-    .menu-container a, .menu-container i{
-        color: white;
-        padding: 5px 0 0 20px;
-    }
 
 }
 
@@ -692,33 +629,6 @@ footer a{
         margin-top: 220px;
      }
 
-     #menubar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 3;
-        display: none;
-    }
-    
-    .menu-container{
-        position: fixed;
-        top: 0;
-        right: 0;
-        max-width: 350px;
-        width: 100%;
-        height: 100vh;
-        background-color: #ff1a1a;
-        display: block;
-        
-    }
-
-    .menu-container a, .menu-container i{
-        color: white;
-        padding: 5px 0 0 20px;
-    }
 }
 
 @media only screen and (max-width: 400px){
@@ -749,31 +659,4 @@ footer a{
         margin-top: 220px;
      }
 
-     #menubar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 3;
-        display: none;
-    }
-    
-    .menu-container{
-        position: fixed;
-        top: 0;
-        right: 0;
-        max-width: 350px;
-        width: 100%;
-        height: 100vh;
-        background-color: #ff1a1a;
-        display: block;
-        z-index: 3;
-    }
-
-    .menu-container a, .menu-container i{
-        color: white;
-        padding: 5px 0 0 20px;
-    }
 }
